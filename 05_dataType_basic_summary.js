@@ -58,6 +58,39 @@ console.log(typeof myfunction)  //output : object function
 
 
 
+// =========================
+
+
+// Stack (primitive), Heap (Non-primitive)
+
+let myYoutubeName = "dixit.com"
+
+let anotherName = myYoutubeName
+
+anotherName="harsh.com"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne ={
+    email : "username@gamil.com",
+    upi : "user@bla"
+
+}
+
+ let userTwo = userOne
+
+ console.log(userOne.email);
+
+userTwo.email = "dixit@google.com"  // heap in original value change
+
+ console.log(userOne.email);
+ console.log(userTwo.email);
+
+
+ // stack is a copy value  provide 
+ // heap is a original value provide
+ 
 
 
 
